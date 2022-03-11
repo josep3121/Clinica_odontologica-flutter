@@ -18,22 +18,43 @@ class cita extends StatelessWidget {
           child: Column(
             children: [
               TableCalendar(calendarController: _controller),
-              Text('6-03-2022'),
-              Text('10:00 Am'),
-              Text('Limpieza Dental'),
-              Text('Dr. Eugenio Solis'),
-              Text(' '),
-              Text('3-03-2022'),
-              Text('2:00 Pm'),
-              Text('Calza de diente'),
-              Text('Dra. Paola Estrada'),
-              Text(' '),
-              Text('4-03-2022'),
-              Text('7:00 Am'),
-              Text('Correccion de Mordida'),
-              Text('Dr. Francisco Pabon'),
-              Text(' '),
-              
+              Card(
+                child: Column(
+                  children:[
+                    ListTile(
+                      leading:Icon(Icons.calendar_view_day),
+                      title: Text('6-03-2022'),
+                      subtitle: Text('10:00 Am \nLimpieza Dental \nDr. Eugenio Solis'),
+                      
+                    )
+                  ]
+                ),
+              ),
+              Card(
+                child: Column(
+                  children:[
+                    ListTile(
+                      leading:Icon(Icons.calendar_view_day),
+                      title: Text('3-03-2022'),
+                      subtitle: Text('2:00 Pm \nCalza de diente \nDra. Paola Estrada'),
+                      
+                    )
+                  ]
+                ),
+              ),
+              Card(
+                child: Column(
+                  children:[
+                    ListTile(
+                      leading:Icon(Icons.calendar_view_day),
+                      title: Text('4-03-2022'),
+                      subtitle: Text('7:00 Am \nCorreccion de Mordida \nDr. Francisco Pabon'),
+                      
+                    )
+                  ]
+                ),
+              ),
+                           
             ],
             
           ),

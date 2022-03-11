@@ -15,21 +15,43 @@ class Pago extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text('Carillas de Porcelana'),
-              Text('3-02-2022'),
-              Text('Efectivo'),
-              Text('1.200.000'),
-              Text(' '),
-              Text('Ortodoncia invisible'),
-              Text('15-01-2022'),
-              Text('Tarjeta'),
-              Text('2.500.000'),
-              Text(' '),
-              Text('Blanqueamiento dental'),
-              Text('25-01-2022'),
-              Text('Efectivo'),
-              Text('500.000'),
-              
+              Card(
+                child: Column(
+                  children:[
+                    ListTile(
+                      leading:Icon(Icons.monetization_on),
+                      title: Text('Carillas de Porcelana'),
+                      subtitle: Text('3-02-2022 \nEfectivo \n1.200.000'),
+                      
+                    )
+                  ]
+                ),
+              ),
+             Card(
+                child: Column(
+                  children:[
+                    ListTile(
+                      leading:Icon(Icons.monetization_on),
+                      title: Text('Ortodoncia invisible'),
+                      subtitle: Text('15-01-2022 \nTarjeta \n2.500.000'),
+                      
+                    )
+                  ]
+                ),
+              ),
+              Card(
+                child: Column(
+                  children:[
+                    ListTile(
+                      leading:Icon(Icons.monetization_on),
+                      title: Text('Blanqueamiento dental'),
+                      subtitle: Text('25-01-2022 \nEfectivo \n500.000'),
+                      
+                    )
+                  ]
+                ),
+              ),
+                            
             ],
             
           ),
